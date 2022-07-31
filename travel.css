@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li {
+    margin: 0 30px;
+}
+.active {
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-image: url(/Users/rakeshkumar/Downloads/mount-everest.webp) ;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-contant{
+    margin-bottom: 300px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-contant h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 125px;
+    height: 2px;
+    margin-left: 80px;
+}
+.learn{
+    padding: 1px 8px 3px;
+    border-radius: 30px;
+    background-color: rgb(192, 92, 92);
+    color: whitesmoke;
+    font-size: 13px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.tittle{
+    text-align: center;
+    font-size: 3vmin;
+    color: rgb(97, 97, 164);
+}
+.line2{
+    width: 250px;
+    margin-left: 80px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: rgb(96, 96, 237);
+    margin: 20px auto;
+}
+p{
+    color: rgb(73, 73, 175);
+}
+.events .learn{
+    margin-top: 30px;
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Users/rakeshkumar/Downloads/ae69e2a181eeb8ab42d78fc0e66d03a5.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.explore-contant{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-contant h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+.explore-contant p{
+    color: rgb(29, 85, 215);
+}
+.explore-contant .learn{
+    margin: 30px;
+}
+.content-col{
+    width: 50%;
+}
+.image-col{
+    width: 60%;
+}
+.tour .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img{
+    max-width: 250px;
+    margin: 5px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: rgb(51, 51, 119);
+}
+.content-col p{
+    padding: 0;
+    margin: 20px auto;
+}
+.content-col .learn{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(155, 155, 218);
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+/* Menu responcive  */
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color:rgb(122, 122, 172) ;
+        margin-top: -900px;
+        transition: all 0.6s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+    /* Events */
+    .row{
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+     /* exlore  */
+    .explore-contant{
+        width: 100%;
+    }
+    .tour .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+/* Animation */
+img{
+    transition: tranform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.learn:hover{
+    background-color: whitesmoke;
+    color: red;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.456);
+}
+li:hover{
+    color: red;
+    cursor: pointer;
+}
